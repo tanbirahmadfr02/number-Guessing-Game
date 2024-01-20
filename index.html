@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Number guessing game</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <section id="main">
+      <h1 class="heading text-center">Wanna play game?</h1>
+
+      <!-- ========intro box start ======= -->
+      <div class="introBox">
+        <input
+          class="pOneName form-control"
+          type="text"
+          placeholder="Enter your Name"
+        />
+        <button class="next">Next</button>
+      </div>
+      <!-- ========intro box end ======= -->
+
+      <!-- ======player one box start ===== -->
+      <div class="playerOneBox d-none">
+        <input
+          class="pOneInput form-control"
+          type="text"
+          placeholder="Enter a Number"
+        />
+        <button class="startGame">Start Game</button>
+      </div>
+      <!-- ======player one box ene ===== -->
+
+      <!-- ======player two box start ===== -->
+      <div class="playerTwoBox d-none">
+        <input
+          class="pTwoName form-control"
+          type="text"
+          placeholder="Enter a Your Name"
+        />
+        <button class="letsPlay">Let's Play</button>
+      </div>
+      <!-- ======player two box end ===== -->
+
+      <!-- ======player two second box start ===== -->
+      <div class="playerTwoSecondBox d-none">
+        <input
+          class="pTwoInput form-control"
+          type="text"
+          placeholder="Enter a a Number"
+        />
+        <button class="submit">Let's Play</button>
+      </div>
+      <h3 class="chance d-none">Your have <span class="chanceSpan"></span> chances</h3>
+      <!-- ======player two second box end ===== -->
+
+      <div class="alert alert-danger mt-4 d-none error" role="alert"></div>
+
+      <!-- =====winner display start ======= -->
+      <section class="winnerDisplay d-none">
+        <h4 class="winner"></h4>
+        <h5 class="usedChance"></h5>
+        <img src="excited.gif" alt="">
+        <button class="restart">Restart</button>
+      </section>
+      <!-- =====winner display end ======= -->
+
+    </section>
+    <script src="js/bootstrap.bundle.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>

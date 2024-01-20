@@ -1,0 +1,130 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(178, 175, 175);
+  display: flex;
+  font-family: "Nunito", sans-serif;
+}
+
+#main {
+  padding: 40px;
+  background-color: white;
+  width: 500px;
+  margin: 200px auto;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  text-align: center !important;
+}
+
+#main .heading {
+  font-size: 32px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#main input::placeholder {
+  font-size: 24px;
+  color: #817d7d;
+  font-weight: 600;
+}
+#main input {
+  font-size: 24px;
+  color: #817d7d;
+  border: 1px solid #817d7d;
+  width: 100%;
+  padding: 20px 40px;
+  font-weight: 600;
+  border-radius: 35px;
+  -webkit-border-radius: 35px;
+  -moz-border-radius: 35px;
+  -ms-border-radius: 35px;
+  -o-border-radius: 35px;
+}
+
+#main button {
+  padding: 15px 70px;
+  border: none;
+  font-size: 18px;
+  font-weight: 700;
+  color: #7041d3;
+  border: 2px solid #7041d3;
+  border-radius: 30px;
+  background: transparent;
+  margin-top: 20px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
+  position: relative;
+  z-index: 999;
+  overflow: hidden;
+  transition: 0.5s ease;
+  -webkit-transition: 0.5s ease;
+  -moz-transition: 0.5s ease;
+  -ms-transition: 0.5s ease;
+  -o-transition: 0.5s ease;
+}
+
+#main button::after {
+  position: absolute;
+  content: "";
+  z-index: -1 !important;
+  top: 0;
+  left: 0;
+  width: 30%;
+  height: 100%;
+  background-color: #7041d3;
+  border-radius: 30px 0 0 30px;
+  transition: 0.5s ease;
+  -webkit-transition: 0.5s ease;
+  -moz-transition: 0.5s ease;
+  -ms-transition: 0.5s ease;
+  -o-transition: 0.5s ease;
+  -webkit-border-radius: 30px 0 0 30px;
+  -moz-border-radius: 30px 0 0 30px;
+  -ms-border-radius: 30px 0 0 30px;
+  -o-border-radius: 30px 0 0 30px;
+}
+
+#main button:hover::after {
+  width: 100%;
+}
+#main button:hover {
+  color: white;
+}
+#main .winnerDisplay {
+  height: 100vh;
+  width: 100vw;
+  background-color: lightseagreen;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+}
+
+#main .winnerDisplay h4{
+    font-size: 40px;
+    color: white;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+#main .winnerDisplay h5{
+    font-size: 20px;
+    color: white;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+
